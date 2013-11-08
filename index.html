@@ -19,10 +19,9 @@
 
 
 <body>
-	<a href="https://github.com/mshang/syntree"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 	<div id="accordion">
 		<h3><a href="#">Syntax Tree Generator</a></h3><div style="text-align:left">
-			<textarea id="i" rows="4">[S [NP This] [VP [V is] [^NP a wug]]]</textarea>
+			<textarea id="i" rows="4">(S (NP This) (VP (V is) (^NP a wug)))</textarea>
 			(C) 2011 by <a href="http://mshang.ca/">Miles Shang</a>, see <a href="LICENSE.txt">license</a>.
 		</div>
 		
@@ -76,10 +75,10 @@
 		<h3><a href="#">Help</a></h3><div class="help">
 			<p>Use labelled bracket notation. This app will build the tree as you type and will attempt to close any brackets that you may be missing. Save the image to your computer by right-clicking on it and selecting "Save image as". For more information, including on how to draw movement lines, visit the <a href="https://github.com/mshang/syntree/wiki">wiki</a>.</p>
 			<h3>Examples</h3>
-			<a class="example" href="?i=[NP^ Alice]">[NP^ Alice]</a><br />
-			<a class="example" href="?i=[NP [N Alice] and [N Bob]]">[NP [N Alice] and [N Bob]]</a><br />
-			<a class="example" href="?i=[S[NP[N Alice]][VP[V is][NP[N'[N a student][PP^ of physics">[S[NP[N Alice]][VP[V is][NP[N'[N a student][PP^ of physics</a><br />
-			<a class="example" href="?i=[S [X_a Movement] [Y example &lt;a&gt;]]">[S [X_a Movement] [Y example &lt;a&gt;]]</a>
+			<a class="example" href="?i=(NP^ Alice)">(NP^ Alice)</a><br />
+			<a class="example" href="?i=(NP (N Alice) and (N Bob))">(NP (N Alice) and (N Bob))</a><br />
+			<a class="example" href="?i=(S(NP(N Alice))(VP(V is)(NP(N'(N a student)(PP^ of physics">(S(NP(N Alice))(VP(V is)(NP(N'(N a student)(PP^ of physics</a><br />
+			<a class="example" href="?i=(S (X_a Movement) (Y example &lt;a&gt;))">(S (X_a Movement) (Y example &lt;a&gt;))</a>
 		</div>
 	</div>
 	<br />
